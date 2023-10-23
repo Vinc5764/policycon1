@@ -1,4 +1,3 @@
-import React from "react";
 import frame from "./assets/frame.png";
 
 const BannerGroup = () => {

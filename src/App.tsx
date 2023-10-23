@@ -1,6 +1,4 @@
-import React from "react";
 import NavBar from "./NavBar";
-import Banner from "./Banner";
 import Partners from "./Partners";
 import MadeFor from "./MadeFor";
 import Areas from "./Areas";

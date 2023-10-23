@@ -1,4 +1,3 @@
-import React from "react";
 import Masood from "./assets/Masood.png";
 import Microsoft from "./assets/Microsoft-for-startups-logo.png";
 import Kickstart from "./assets/kickstarter.png";

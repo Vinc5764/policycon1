@@ -1,5 +1,3 @@
-import React from "react";
-
 const TestimonialCard = () => {
   return (
     <div className="ml-6 w-10/12 xl:w-full">

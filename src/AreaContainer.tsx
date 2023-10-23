@@ -1,4 +1,3 @@
-import React from "react";
 import vector1 from "./assets/vector1.png";
 
 const AreaContainer = ({ title, number }: any) => {

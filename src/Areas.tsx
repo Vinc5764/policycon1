@@ -1,4 +1,3 @@
-import React from "react";
 import AreaContainer from "./AreaContainer";
 
 const areas = [

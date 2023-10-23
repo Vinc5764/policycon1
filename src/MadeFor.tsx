@@ -1,6 +1,3 @@
-import React from "react";
-import Image from "./assets/image2.png";
-import Image1 from "./assets/image1.png";
 // import { Link } from "react-router-dom";
 
 const MadeFor = () => {

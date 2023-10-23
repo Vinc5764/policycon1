@@ -1,5 +1,5 @@
 import { useMediaQuery } from "react-responsive";
-import { HiSearch, HiMenu, HiX, HiChevronDown } from "react-icons/hi";
+import { HiMenu, HiX } from "react-icons/hi";
 import { useState, FunctionComponent } from "react";
 
 import "./mobileNav.css";
@@ -35,12 +35,12 @@ const links: Link[] = [
   },
 ];
 
-const reactIconStyle = {
-  width: "30px",
-  height: "30px",
-  color: "#9e9ea7",
-  cursor: "pointer",
-};
+// const reactIconStyle = {
+//   width: "30px",
+//   height: "30px",
+//   color: "#9e9ea7",
+//   cursor: "pointer",
+// };
 
 const MobileNavbar: FunctionComponent<MyComponentProps> = ({
   isOpen,
@@ -52,13 +52,13 @@ const MobileNavbar: FunctionComponent<MyComponentProps> = ({
         {isOpen ? (
           <HiX onClick={() => setIsOpen(!isOpen)} />
         ) : (
-          <div className="flex gap-2 items-center">
+          <div className="flex items-center gap-2">
             {/* <Link to="/login">
               {" "}
               <p className=" hover:text-red-400">Login</p>
             </Link> */}
             <HiMenu
-              className="w-[30px] h-[30px]  "
+              className="h-[30px] w-[30px]  "
               onClick={() => setIsOpen(!isOpen)}
             />
           </div>
@@ -66,7 +66,7 @@ const MobileNavbar: FunctionComponent<MyComponentProps> = ({
       </nav>
       {isOpen ? (
         <div className="mobile-menu    bg-slate-50 ">
-          <ul className="flex flex-col  justify-center  pr-[20px]   items-end ">
+          <ul className="flex flex-col  items-end  justify-center   pr-[20px] ">
             {links.map((link) => {
               return (
                 <li
@@ -81,24 +81,23 @@ const MobileNavbar: FunctionComponent<MyComponentProps> = ({
             })}
           </ul>
           <div className="flex justify-end space-x-6">
-            {/* <Link to="/register"> */}
-              {" "}
-              <button
-                style={{
-                  padding: "0px 0px",
-                  borderRadius: "30px",
-                  width: "124px",
-                  border: "2px solid black",
-                  height: "55px",
-                  fontSize: "18px",
-                }}
-                className="   lg:block  text-black  "
-              >
-                Signup
-              </button>
+            {/* <Link to="/register"> */}{" "}
+            <button
+              style={{
+                padding: "0px 0px",
+                borderRadius: "30px",
+                width: "124px",
+                border: "2px solid black",
+                height: "55px",
+                fontSize: "18px",
+              }}
+              className="   text-black  lg:block  "
+            >
+              Signup
+            </button>
             {/* </Link> */}
             {/* <Link to="/login"> */}
-              <Button>Login</Button>
+            <Button>Login</Button>
             {/* </Link> */}
           </div>
         </div>
